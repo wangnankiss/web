@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+	*{padding: 0;margin: 0;}
+	div{width: 200px;height:400px;background-color: blue;position: relative;top: 200px; left:0px; }	
+	#left_little{height: 20px;width: 20px;background-color: #f00;position: absolute;left: 200px;height: 100px;top: 0px;}
+	</style>
+	<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+  $("div").mouseover(function(){
+    $("div").animate({left:'-100px'});
+  });
+   $("div").mouseout(function(){
+    $("div").animate({left:'0px'});
+  });
+});
+	</script>
+</head>
+<body>
+<div> </div>
+
+</body>
+</html>
